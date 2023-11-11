@@ -8,7 +8,7 @@ body {
 
 .sidebar {
   flex: 18% 0 1;
-  background-color: blue;
+  background-color: rgb(82, 129, 231);
 }
 
 .content {
@@ -16,19 +16,54 @@ body {
   background-color: aliceblue;
 }
 
+nav {
+  background-color: white;
+}
+
+.navitem {
+  padding: 2rem;
+}
+
+.searchbar {
+  display: flex;
+}
+
+.bottomnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 ul {
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
+  margin-left: 2rem;
+  margin-top: 3rem;
 }
 
 li {
   color: white;
+  margin-bottom: 1rem;
+}
+
+li:nth-child(7) {
+  margin-top: 3rem;
 }
 
 h2 {
-  text-align: center;
+  text-align: left;
   color: white;
+  margin-left: 2rem;
+}
+
+button {
+  background-color: rgb(82, 129, 231);
+  color: white;
+  border: 0;
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  margin-right: 2rem;
 }
