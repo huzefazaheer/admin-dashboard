@@ -89,6 +89,13 @@ ul {
 li {
   color: white;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+li > span {
+  margin-right: 1rem;
 }
 
 li:nth-child(7) {
