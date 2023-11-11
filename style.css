@@ -9,6 +9,7 @@ body {
   flex: 20% 0 0.5;
   min-width: 200px;
   background-color: rgb(82, 129, 231);
+  padding-top: 0;
 }
 
 .right {
@@ -19,7 +20,7 @@ body {
 .content {
   display: flex;
   padding: 1rem 3rem;
-  background-color: rgb(236, 234, 234);
+  background-color: rgb(226, 231, 239);
   padding-bottom: 4rem;
 }
 
@@ -43,11 +44,51 @@ body {
 .card {
   background-color: white;
   border-radius: 8px;
+}
+
+.rightsidebar .card {
   padding: 1rem 2rem;
+}
+
+.color {
+  background-color: gold;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  grid-area: color;
+}
+
+h4 {
+  grid-area: heading;
+}
+
+p {
+  grid-area: content;
 }
 
 .icon-group {
   text-align: right;
+  grid-area: icons;
+}
+
+.icon-group > * {
+  margin-left: 1rem;
+}
+
+.card.selectable {
+  display: grid;
+  grid-template-rows: 2rem 1fr 0.3fr;
+  grid-template-columns: 10px 1rem 2fr 3fr 1rem;
+  grid-template-areas:
+    "color . heading heading" "color . content content"
+    "color . . icons";
+}
+
+.card.selectable:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card.selectable:active {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .grid-container {
@@ -60,20 +101,35 @@ body {
 
 nav {
   background-color: white;
+  box-shadow: 10px 10px 5px lightblue;
 }
 
-.navitem {
-  padding: 0rem;
-}
-
-.searchbar {
+.searchbar,
+.menu {
   display: flex;
+  align-items: center;
 }
 
+input {
+  width: max(50vw, 60px);
+  height: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(226, 231, 239);
+  color: black;
+  padding: 0.2rem 1rem;
+}
+
+.topnav,
 .bottomnav {
+  padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.topnav > * > * {
+  margin-right: 3rem;
 }
 
 ul {
@@ -83,12 +139,12 @@ ul {
   align-items: flex-start;
   list-style: none;
   margin-left: 2rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 li {
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   display: flex;
   align-items: flex-end;
   font-weight: bold;
@@ -103,7 +159,6 @@ li:nth-child(7) {
 }
 
 h2 {
-  text-align: left;
   color: white;
   margin-left: 2rem;
 }
