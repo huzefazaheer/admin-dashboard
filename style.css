@@ -71,7 +71,7 @@ p {
 }
 
 .icon-group > * {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .card.selectable {
@@ -85,10 +85,12 @@ p {
 
 .card.selectable:hover {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.01);
 }
 
 .card.selectable:active {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
 }
 
 .grid-container {
@@ -101,7 +103,7 @@ p {
 
 nav {
   background-color: white;
-  box-shadow: 10px 10px 5px lightblue;
+  box-shadow: 10px 10px 5px rgb(56, 56, 56);
 }
 
 .searchbar,
@@ -147,16 +149,15 @@ ul {
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
-  margin-left: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 li {
   color: white;
-  margin-bottom: 2rem;
   display: flex;
   align-items: flex-end;
   font-weight: bold;
+  padding: 1rem 10rem 1rem 2rem;
 }
 
 li > span {
@@ -167,9 +168,15 @@ li:nth-child(7) {
   margin-top: 3rem;
 }
 
+li:hover {
+  background-color: rgb(50, 89, 172);
+  border-left: 5px white solid;
+}
+
 h2 {
   color: white;
-  margin-left: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 button {
@@ -179,6 +186,14 @@ button {
   border-radius: 50px;
   padding: 0.5rem 1.5rem;
   margin-right: 2rem;
+}
+
+button:hover {
+  background-color: rgb(50, 89, 172);
+}
+
+button:active {
+  background-color: rgb(26, 49, 99);
 }
 
 img.small {
@@ -205,12 +220,54 @@ hr {
   color: rgba(170, 170, 170, 0.329);
 }
 
+.card.trending {
+  padding: 0;
+}
+
 .userprofile {
   display: flex;
-  margin-top: 1rem;
   align-items: center;
+  padding: 0.5rem 2rem;
 }
 
 .userprofile > *:nth-child(2) {
-  margin-left: 1rem;
+  padding-left: 1rem;
+}
+
+.userprofile:hover {
+  background-color: whitesmoke;
+}
+
+.userprofile:hover:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.userprofile:hover:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.material-symbols-outlined {
+  padding: 4px;
+}
+.material-symbols-outlined:hover {
+  border-radius: 50%;
+  background-color: #6969693b;
+}
+
+.material-symbols-outlined:active {
+  background-color: #4646463b;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+  fill: white;
 }
