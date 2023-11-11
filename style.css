@@ -25,6 +25,7 @@ body {
 
 .projects {
   flex: 75%;
+  margin-right: 2rem;
 }
 
 .rightsidebar {
@@ -34,6 +35,13 @@ body {
 .card {
   background-color: white;
   border-radius: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-row: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 nav {
