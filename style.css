@@ -1,0 +1,34 @@
+body {
+  display: flex;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.sidebar {
+  flex: 18% 0 1;
+  background-color: blue;
+}
+
+.content {
+  flex: auto 1 1;
+  background-color: aliceblue;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
