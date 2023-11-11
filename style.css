@@ -192,3 +192,15 @@ img.large {
   height: 80px;
   border-radius: 80px;
 }
+
+.small {
+  font-size: 0.9rem;
+}
+
+.sub {
+  color: rgb(63, 62, 62);
+}
+
+hr {
+  color: rgba(170, 170, 170, 0.329);
+}
