@@ -7,21 +7,42 @@ body {
 }
 
 .sidebar {
-  flex: 18% 0 1;
+  flex: 16% 0 0.5;
+  min-width: 200px;
   background-color: rgb(82, 129, 231);
 }
 
-.content {
+.right {
   flex: auto 1 1;
   background-color: aliceblue;
 }
 
+.content {
+  display: flex;
+  height: 75vh;
+  background-color: rgb(236, 234, 234);
+}
+
+.projects {
+  flex: 75%;
+}
+
+.rightsidebar {
+  flex: 25%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+}
+
 nav {
   background-color: white;
+  height: 25vh;
 }
 
 .navitem {
-  padding: 2rem;
+  padding: 1.2rem;
 }
 
 .searchbar {
