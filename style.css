@@ -47,7 +47,7 @@ body {
 }
 
 .rightsidebar .card {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
 }
 
 .color {
@@ -203,4 +203,14 @@ img.large {
 
 hr {
   color: rgba(170, 170, 170, 0.329);
+}
+
+.userprofile {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.userprofile > *:nth-child(2) {
+  margin-left: 1rem;
 }
